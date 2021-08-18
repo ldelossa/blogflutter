@@ -44,7 +44,7 @@ class BlogCard extends StatelessWidget {
     return InkWell(
       hoverColor: Colors.grey[300],
       borderRadius: BorderRadius.all(Radius.circular(20)),
-      onTap: () => {router.navigateTo(context, "/blog/" + postURL)},
+      onTap: () => {router.navigateTo(context, "/blog/posts/" + postURL)},
       child: Container(width: width, height: height, child: buildCard()),
     );
   }
