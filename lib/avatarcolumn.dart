@@ -6,7 +6,8 @@ class AvatarColumn extends StatelessWidget {
     return Column(children: [
       Container(
           padding: EdgeInsets.only(bottom: 15, left: 15, right: 15, top: 50),
-          child: CircleAvatar(radius: 65, child: Text("LD"))),
+          child: CircleAvatar(
+              radius: 65, backgroundImage: AssetImage("images/avatar.jpg"))),
       Container(
           padding: EdgeInsets.all(10),
           child: Text("ldelossa.is",

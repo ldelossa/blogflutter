@@ -16,7 +16,6 @@ AppBar buildNavBar(BuildContext context, String selected) {
 
 AppBar buildDesktopAppBar(BuildContext context, String selected) {
   return AppBar(
-    centerTitle: true,
     title: buildButtonBar(context, selected),
     leadingWidth: 200,
     automaticallyImplyLeading: false,
@@ -43,7 +42,6 @@ AppBar buildDesktopAppBar(BuildContext context, String selected) {
 
 AppBar buildMobileAppBar(BuildContext context, String selected) {
   return AppBar(
-    centerTitle: true,
     // makes sure no back button is present.
     leading: null,
     automaticallyImplyLeading: false,
@@ -66,6 +64,9 @@ ButtonBar buildButtonBar(BuildContext context, String selected) {
                 decoration: (selected == "home")
                     ? TextDecoration.underline
                     : TextDecoration.none))),
+    Container(
+        width: 15,
+    ),
     TextButton(
         onPressed: () => router.navigateTo(context, "/archive"),
         child: Text("Archive",
@@ -83,7 +84,7 @@ ButtonBar buildButtonBar(BuildContext context, String selected) {
   return ButtonBar(
     alignment: (MediaQuery.of(context).size.width <= 1000)
         ? MainAxisAlignment.center
-        : MainAxisAlignment.center,
+        : MainAxisAlignment.end,
     children: buttons,
   );
 }

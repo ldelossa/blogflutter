@@ -23,7 +23,7 @@ Widget buildAboutContents() {
       alignment: Alignment.centerLeft,
       padding: EdgeInsets.only(top: 15, bottom: 15, left: 10, right: 10),
       child: Text(
-          "My name is Louis DeLosSantos and I'm currently an engineer at Red Hat.\n\nMy interests stretch across infrastructure, systems programming, networking, distributed systems and application architectures.\n\nI've worked at a lot of places, built a lot of things, and enjoy sharing my experience along the way.",
+          "My name is Louis DeLosSantos and I'm currently an engineer at Isovalent.\n\nMy interests stretch across infrastructure, systems programming, networking, distributed systems and application architectures.\n\nI've worked at a lot of places, built a lot of things, and enjoy sharing my experience along the way.",
           style: GoogleFonts.raleway(
             fontSize: 25,
             letterSpacing: 2,
